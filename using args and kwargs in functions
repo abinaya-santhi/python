@@ -1,0 +1,6 @@
+def myfun(*args, **kwargs):
+    for arg in args:
+        print(arg)
+    for key, value in kwargs.items():
+        print(f"{key} == {value}")
+myfun("hey" , "hello", hi= "123", hello= "234")
