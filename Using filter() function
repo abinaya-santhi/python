@@ -1,0 +1,5 @@
+def even(n):
+    return n%2 == 0
+a = list(map(int, input().split()))
+b = filter(even,a)
+print(list(b))
