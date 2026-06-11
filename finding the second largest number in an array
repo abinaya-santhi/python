@@ -1,0 +1,16 @@
+def second_large (arr):
+    if len(arr) < 2:
+        return -1
+        
+    second = first = float('-inf')
+    for num in arr :
+        if num > first:
+            second = first
+            first = num
+        elif first > num > second:
+            second = num 
+    
+    return second 
+    
+arr = list(map(int, input().split()))
+print(second_large(arr))
