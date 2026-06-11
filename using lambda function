@@ -1,0 +1,4 @@
+calc = lambda x,y: (x+y , x*y)
+x = int(input())
+y = int(input())
+print(calc(x,y))
