@@ -1,0 +1,16 @@
+s = input().strip()
+t = input().strip()
+
+pos_s = {}
+pos_t = {}
+
+for i in range(len(s)):
+    pos_s[s[i]] = i
+for i in range(len(t)):
+    pos_t[t[i]] = i
+    
+ans = 0
+for ch in s:
+    ans += abs(pos_s[ch] - pos_t[ch])
+
+print("The permutation difference of the two given Strings is :", ans)
