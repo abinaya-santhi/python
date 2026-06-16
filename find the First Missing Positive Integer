@@ -1,0 +1,9 @@
+nums = list(map(int,input().split()))
+
+s = set(nums)
+ans = 1
+while ans in s:
+    ans += 1
+
+print(ans)
+    
