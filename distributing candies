@@ -1,0 +1,7 @@
+def max_candy_types(candies):
+    unique_types = len(set(candies))
+    return min(unique_types, len(candies) // 2)
+
+candies = list(map(int, input().split()))
+
+print(max_candy_types(candies))
